@@ -4,6 +4,10 @@
     "purpose": "Fetch-first seed endpoints for daily California-focused ID epi newsletter"
   },
   "california": {
+    "fallbackMatrix": {
+      "url": "sources/fallback_matrix.md",
+      "note": "Use when preferred endpoints are blocked/unavailable."
+    },
     "cdph": [
       {
         "name": "CDPH COVID-19 hub",
