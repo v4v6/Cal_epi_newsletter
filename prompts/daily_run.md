@@ -13,6 +13,11 @@ Output targets:
 2) Update `docs/index.md` to point to the latest edition.
 3) Commit + push to `main`.
 
-When gathering sources:
+Source acquisition (hardened workflow):
+- Use the curated seed list in `sources/seeds.json` (and documentation in `sources/SEEDS.md`) as your **starting point**.
+- Prefer endpoints that are reliably fetchable (static HTML, PDF advisories, MMWR pages, CDC outbreak pages).
+- If a key county/CDPH page is blocked (Cloudflare) or fails TLS chain delivery, **do not guess**: cite what you can, and clearly record the limitation in **Data Notes & Caveats**.
+
+Operational emphasis:
 - Prefer official situation updates, advisories, outbreak investigation pages, surveillance summaries.
 - Include occupational epi where available (healthcare worker exposure guidance, nosocomial clusters, lab/diagnostic alerts).

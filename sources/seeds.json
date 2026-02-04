@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "updated": "2026-02-04",
+    "purpose": "Fetch-first seed endpoints for daily California-focused ID epi newsletter"
+  },
+  "california": {
+    "cdph": [
+      {
+        "name": "CDPH COVID-19 hub",
+        "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx",
+        "type": "html",
+        "priority": 1
+      },
+      {
+        "name": "CDPH Communicable Disease Control landing",
+        "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/CommunicableDiseaseControl.aspx",
+        "type": "html",
+        "priority": 2
+      }
+    ],
+    "counties": {
+      "san_francisco": [
+        {
+          "name": "SFDPH Health Alerts (PDF index)",
+          "url": "https://www.sf.gov/resource/2024/health-alerts",
+          "type": "html",
+          "priority": 1
+        }
+      ],
+      "los_angeles": [
+        {
+          "name": "LA County DPH Media",
+          "url": "https://publichealth.lacounty.gov/media/",
+          "type": "html",
+          "priority": 1
+        }
+      ],
+      "alameda": [
+        {
+          "name": "Alameda County Public Health — Health Alerts",
+          "url": "https://acphd.org/health-alerts/",
+          "type": "html",
+          "priority": 1
+        }
+      ],
+      "santa_clara": [
+        {
+          "name": "Santa Clara County Public Health — News",
+          "url": "https://publichealth.sccgov.org/news",
+          "type": "html",
+          "priority": 1,
+          "notes": "May block automated fetch (Cloudflare)."
+        }
+      ],
+      "san_diego": [
+        {
+          "name": "San Diego County — Communicable Disease",
+          "url": "https://www.sandiegocounty.gov/content/sdc/hhsa/programs/phs/community_epidemiology/dc/communicable_disease.html",
+          "type": "html",
+          "priority": 1,
+          "notes": "URL structure changes periodically; verify if 404."
+        }
+      ],
+      "sacramento": [
+        {
+          "name": "Sacramento County — Latest News",
+          "url": "https://www.saccounty.gov/news/latest-news/",
+          "type": "html",
+          "priority": 1,
+          "notes": "AEM site; paths sometimes change."
+        }
+      ]
+    }
+  },
+  "usa": {
+    "cdc": [
+      {
+        "name": "CDC MMWR index",
+        "url": "https://www.cdc.gov/mmwr/index.html",
+        "type": "html",
+        "priority": 1
+      },
+      {
+        "name": "CDC Current Outbreak List",
+        "url": "https://www.cdc.gov/outbreaks/index.html",
+        "type": "html",
+        "priority": 2
+      }
+    ]
+  },
+  "world": {
+    "who": [
+      {
+        "name": "WHO Disease Outbreak News",
+        "url": "https://www.who.int/emergencies/disease-outbreak-news",
+        "type": "html",
+        "priority": 1
+      }
+    ]
+  }
+}
